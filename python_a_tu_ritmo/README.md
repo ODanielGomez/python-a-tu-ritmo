@@ -16,4 +16,8 @@ Sube `index.html` y `README.md` a la raíz de tu repositorio. En GitHub, entra e
 
 ## Ejercicios por tema
 
-La sección **Ejercicios por tema** ofrece 101 variantes guiadas para cada una de las 40 lecciones (4.040 en total). Se combinan cuatro tipos de reto por tema con situaciones distintas. Son variantes de práctica, no 4.040 problemas diseñados individualmente ni preguntas de selección múltiple. Puedes marcarlas manualmente; el progreso se guarda en el navegador y no se verifica la respuesta de forma automática. Los ejercicios de terminal, paquetes, archivos o `input()` pueden requerir Python instalado en el computador.
+La sección **Ejercicios por tema** ofrece 102 variantes guiadas para cada una de las 40 lecciones (4.080 en total). Las primeras 101 variantes combinan cuatro tipos de reto por tema con situaciones distintas; la última plantea un reto adicional. Son variantes de práctica, no 4.040 problemas diseñados individualmente ni preguntas de selección múltiple. Puedes marcarlas manualmente; el progreso se guarda en el navegador y no se verifica la respuesta de forma automática. Los ejercicios de terminal, paquetes, archivos o `input()` pueden requerir Python instalado en el computador.
+
+## Preguntas rápidas
+
+Hay 80 preguntas de selección múltiple: dos por cada una de las 40 lecciones. Es necesario responder correctamente la pregunta actual antes de usar el botón «Siguiente pregunta»; si la respuesta es incorrecta, se ofrece una pista y se permite volver a intentar. El acceso a lecciones, otras secciones y ejercicios abiertos sigue disponible para repasar. Los ejercicios abiertos se marcan manualmente y no tienen corrección automática.

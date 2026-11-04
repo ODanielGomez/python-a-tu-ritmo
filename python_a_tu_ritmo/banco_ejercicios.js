@@ -45,7 +45,49 @@ const retosPorTema = [
 const contextosEjercicio = [
  'una reserva de sala','un registro de cliente','un catálogo de productos','una biblioteca','una tienda','un curso virtual','una lista de tareas','un inventario','un control de gastos','una agenda de citas','un sistema de turnos','un evento','una cafetería','una aplicación de notas','una cuenta de usuario','una venta','una evaluación académica','una mascota','una colección de películas','un servicio de transporte','un club deportivo','una entrega de pedidos','una clase de dispositivos','un sistema de soporte','una lista de contactos','un servicio de asesoría'
 ];
-const ejerciciosPorTema = 101;
+const retoAdicional = [
+ 'Explica con tus palabras qué es un algoritmo y escribe uno de tres pasos',
+ 'Predice el valor de dos variables después de una reasignación y compruébalo',
+ 'Dibuja los dos posibles caminos de una decisión y explica cuándo se toma cada uno',
+ 'Acumula la suma de tres valores con for y comprueba el resultado',
+ 'Escribe una función que calcule un total y prueba su valor devuelto',
+ 'Explica la diferencia entre la clase y dos instancias con atributos propios',
+ 'Produce un TypeError y explica qué operación y tipos lo causaron',
+ 'Compara int y float usando un dato que contenga decimales',
+ 'Explica por qué input devuelve texto incluso cuando se escriben dígitos',
+ 'Compara /, // y % usando 15 y 4 y explica cada resultado',
+ 'Une nombre y apellido preservando un espacio entre ellos',
+ 'Evalúa dos comparaciones y predice su resultado antes de ejecutar',
+ 'Escribe condiciones que incluyan exactamente ambos extremos de un intervalo',
+ 'Haz un ciclo que cuente hacia atrás desde cinco hasta uno',
+ 'Compara len de una lista antes y después de quitar un elemento',
+ 'Comprueba si un valor pertenece a una tupla y después a un conjunto',
+ 'Usa un diccionario para contar cuántas veces aparece cada elemento',
+ 'Explica con un ejemplo la diferencia entre un parámetro y un argumento',
+ 'Identifica el ámbito de cada variable en un ejemplo con función',
+ 'Prueba qué excepción ocurre al consultar un índice fuera de una lista',
+ 'Describe qué bloques de try se ejecutan cuando sucede un ValueError',
+ 'Escribe una excepción de dominio y documenta cuándo se lanza',
+ 'Comprueba que un archivo quede cerrado tras salir del bloque with',
+ 'Separa una función en otro archivo e impórtala desde un programa principal',
+ 'Agrega un método que modifique el estado de la instancia actual',
+ 'Explica cómo una propiedad puede validar antes de actualizar un dato',
+ 'Sobrescribe un método heredado y compara el comportamiento de dos objetos',
+ 'Crea dos tipos que respondan de forma diferente al mismo método',
+ 'Usa next para obtener los valores de un generador y observa cuándo termina',
+ 'Crea una comprensión que conserve solo los números pares de una secuencia',
+ 'Dibuja el orden de llamadas de una función con decorador',
+ 'Escribe una prueba que falle y explica qué diferencia encontró',
+ 'Compara los tipos de los datos antes de dumps y después de loads',
+ 'Explica cómo crear y activar un entorno virtual en tu sistema operativo',
+ 'Anota una función y agrega una comprobación explícita del dato recibido',
+ 'Compara qué ocurre al salir de with normalmente y mediante una excepción',
+ 'Explica en qué situaciones asyncio resulta útil y en cuáles no necesariamente',
+ 'Añade una consulta parametrizada para seleccionar datos en SQLite',
+ 'Describe un código HTTP de éxito y cómo manejarías uno de error',
+ 'Divide un proyecto en tareas y define una prueba para cada función principal'
+];
+const ejerciciosPorTema = 102;
 if (retosPorTema.length !== lessons.length) throw new Error('El banco de ejercicios no coincide con la ruta.');
 state.ejercicios = state.ejercicios && typeof state.ejercicios === 'object' ? state.ejercicios : {};
 let temaEjercicio = 0, numeroEjercicio = 0;
@@ -56,7 +98,7 @@ document.querySelector('.nav').appendChild(botonBanco);
 const seccionBanco = document.createElement('section');
 seccionBanco.id = 'banco-ejercicios';
 seccionBanco.className = 'view';
-seccionBanco.innerHTML = `<div class="panel content-panel lesson-content"><span class="tag" style="color:#806ae7">PRACTICA PASO A PASO</span><h1>Ejercicios por tema</h1><p>101 variantes guiadas para cada lección. Cambian el reto y el contexto: no son 101 conceptos distintos. Resuélvelas a tu ritmo y revisa tu resultado.</p><label for="tema-ejercicio"><b>Elige un tema</b></label><select id="tema-ejercicio" style="display:block;width:100%;padding:12px;margin:10px 0 16px;border:1px solid #d8dce8;border-radius:10px;background:white;font:inherit"></select><div id="reto-actual" aria-live="polite"></div><div class="actions"><button class="secondary" id="reto-anterior">← Anterior</button><button class="action" id="reto-completar">Marcar como realizado</button><button class="secondary" id="reto-siguiente">Siguiente →</button></div><p id="reto-estado" role="status"></p><div class="actions"><button class="secondary" id="reto-laboratorio">Ir al laboratorio Python →</button></div><div class="notice">Son retos abiertos de práctica y reflexión: marcarlos como realizados no comprueba automáticamente tu respuesta. Algunos ejercicios de archivos, paquetes, terminal o entrada interactiva requieren Python en tu computador.</div></div>`;
+seccionBanco.innerHTML = `<div class="panel content-panel lesson-content"><span class="tag" style="color:#806ae7">PRACTICA PASO A PASO</span><h1>Ejercicios por tema</h1><p>102 variantes guiadas para cada lección. Cambian el reto y el contexto: no son 101 conceptos distintos. Resuélvelas a tu ritmo y revisa tu resultado.</p><label for="tema-ejercicio"><b>Elige un tema</b></label><select id="tema-ejercicio" style="display:block;width:100%;padding:12px;margin:10px 0 16px;border:1px solid #d8dce8;border-radius:10px;background:white;font:inherit"></select><div id="reto-actual" aria-live="polite"></div><div class="actions"><button class="secondary" id="reto-anterior">← Anterior</button><button class="action" id="reto-completar">Marcar como realizado</button><button class="secondary" id="reto-siguiente">Siguiente →</button></div><p id="reto-estado" role="status"></p><div class="actions"><button class="secondary" id="reto-laboratorio">Ir al laboratorio Python →</button></div><div class="notice">Son retos abiertos de práctica y reflexión: marcarlos como realizados no comprueba automáticamente tu respuesta. Algunos ejercicios de archivos, paquetes, terminal o entrada interactiva requieren Python en tu computador.</div></div>`;
 document.querySelector('.footer').before(seccionBanco);
 const selectorTema = document.getElementById('tema-ejercicio');
 lessons.forEach((leccion, indice) => {const opcion=document.createElement('option'); opcion.value=indice; opcion.textContent=`${indice + 1}. ${leccion.title}`; selectorTema.appendChild(opcion)});
@@ -69,11 +111,12 @@ function mostrarBanco() {
 }
 function pintarEjercicio() {
  const tema=lessons[temaEjercicio]; const accion=retosPorTema[temaEjercicio][numeroEjercicio % 4];
- const contexto=contextosEjercicio[Math.floor(numeroEjercicio / 4)];
+ const contexto=contextosEjercicio[Math.floor(numeroEjercicio / 4)] || 'un proyecto propio';
+ if (!state.ejercicios || typeof state.ejercicios !== 'object') state.ejercicios = {};
  const clave=`${temaEjercicio}:${numeroEjercicio}`; const terminados=Object.keys(state.ejercicios).filter(k=>k.startsWith(`${temaEjercicio}:`) && state.ejercicios[k]).length;
  const panel=document.getElementById('reto-actual'); panel.replaceChildren();
  const titulo=document.createElement('h2'); titulo.textContent=`Ejercicio ${numeroEjercicio+1} de ${ejerciciosPorTema}`;
- const consigna=document.createElement('p'); consigna.textContent=`${accion}. Situación: ${contexto}.`;
+ const consigna=document.createElement('p'); consigna.textContent=numeroEjercicio === 101 ? retoAdicional[temaEjercicio] + "." : `${accion}. Situación: ${contexto}.`;
  const pista=document.createElement('p'); pista.textContent=`Pista: ${tema.hint}`;
  const avance=document.createElement('p'); avance.textContent=`Realizados en este tema: ${terminados} de ${ejerciciosPorTema}.`;
  panel.append(titulo,consigna,pista,avance);
