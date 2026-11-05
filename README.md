@@ -21,3 +21,7 @@ La sección **Ejercicios por tema** ofrece 102 variantes guiadas para cada una d
 ## Preguntas rápidas
 
 Hay 80 preguntas de selección múltiple: dos por cada una de las 40 lecciones. Es necesario responder correctamente la pregunta actual antes de usar el botón «Siguiente pregunta»; si la respuesta es incorrecta, se ofrece una pista y se permite volver a intentar. El acceso a lecciones, otras secciones y ejercicios abiertos sigue disponible para repasar. Los ejercicios abiertos se marcan manualmente y no tienen corrección automática.
+
+## Ruta guiada
+
+Desde «Mi ruta de aprendizaje» se avanza por etapas. Cada una incluye una lección, diez retos abiertos marcados por el estudiante y una prueba final de dos preguntas de selección múltiple; al completarlos se abre la siguiente etapa. Los retos se autoevalúan, no se califican automáticamente. El avance de esta ruta se guarda en el navegador, independiente del progreso de la versión anterior. El banco conserva variantes repetidas por contexto y no equivale a 102 retos originales por tema.
