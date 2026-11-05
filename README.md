@@ -25,3 +25,7 @@ Hay 80 preguntas de selección múltiple: dos por cada una de las 40 lecciones. 
 ## Ruta guiada
 
 Desde «Mi ruta de aprendizaje» se avanza por etapas. Cada una incluye una lección, diez retos abiertos marcados por el estudiante y una prueba final de dos preguntas de selección múltiple; al completarlos se abre la siguiente etapa. Los retos se autoevalúan, no se califican automáticamente. El avance de esta ruta se guarda en el navegador, independiente del progreso de la versión anterior. El banco conserva variantes repetidas por contexto y no equivale a 102 retos originales por tema.
+
+## Retos interactivos de la primera etapa
+
+La etapa «¿Qué es programar?» incluye preguntas verificadas y retos para escribir y ejecutar Python en la misma pantalla. En los retos de código se compara la salida con la esperada: una coincidencia no comprueba el método usado ni que se haya comprendido. Python se carga desde internet mediante Pyodide. Los demás temas mantienen sus retos abiertos de autoevaluación y requieren mejoras similares.
