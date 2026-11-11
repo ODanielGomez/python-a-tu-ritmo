@@ -11,3 +11,33 @@ const retosInteractivos = [
  {tipo:'codigo',titulo:'Corrige la instrucción',pregunta:'Corrige el código para que muestre exactamente Hola.',inicial:'print("Hola)\n',salida:'Hola',pista:'Cierra la cadena antes del paréntesis.',explicacion:'Una cadena necesita comillas de apertura y de cierre.'},
  {tipo:'opciones',titulo:'Lo que aprendiste',pregunta:'¿Cuál es la diferencia entre código y salida?',opciones:['Son siempre lo mismo','El código son instrucciones y la salida es lo que muestra el programa','La salida se escribe antes del código obligatoriamente'],correcta:1,pista:'Compara print("Hola") con lo que ves al ejecutarlo.',explicacion:'El código indica qué hacer; la salida muestra el resultado de ejecutarlo.'}
 ];
+
+
+retosInteractivos.push(
+ {tipo:'opciones',titulo:'Una instrucción',pregunta:'¿Qué son las instrucciones de un programa?',opciones:['Pasos que el computador puede ejecutar','Adornos de la pantalla','El nombre del computador'],correcta:0,pista:'Piensa en la receta de la lección.',explicacion:'Un programa contiene instrucciones para realizar tareas.'},
+ {tipo:'opciones',titulo:'Texto en pantalla',pregunta:'¿Cuál opción muestra el texto Sol?',opciones:['print("Sol")','print(Sol)','Sol()'],correcta:0,pista:'El texto va entre comillas.',explicacion:'Las comillas indican el texto que recibe print.'},
+ {tipo:'opciones',titulo:'Comentarios',pregunta:'¿Para qué puede usarse # en Python?',opciones:['Para escribir un comentario','Para multiplicar dos valores','Para abrir una clase'],correcta:0,pista:'Los comentarios ayudan a explicar el código.',explicacion:'# inicia un comentario que Python no ejecuta como código.'},
+ {tipo:'opciones',titulo:'Leer errores',pregunta:'Si aparece SyntaxError, ¿qué conviene revisar primero?',opciones:['La sintaxis y la línea señalada','La batería del computador','El color del editor'],correcta:0,pista:'Revisa comillas, paréntesis y la línea indicada.',explicacion:'SyntaxError señala un problema al interpretar la sintaxis.'}
+);
+
+// Diez retos con comprobación para aprender variables y tipos.
+const retosVariables = [
+ {tipo:'opciones',titulo:'Guardar un dato',pregunta:'¿Qué hace nombre = "Ana"?',opciones:['Guarda el texto Ana en nombre','Muestra Ana en pantalla','Compara dos valores'],correcta:0,pista:'El signo = asigna un valor.',explicacion:'La variable nombre queda asociada al texto Ana.'},
+ {tipo:'codigo',titulo:'Tu primera variable',pregunta:'Guarda Ana en una variable llamada nombre y muéstrala.',inicial:'# Crea nombre y después usa print\n',salida:'Ana',pista:'El texto necesita comillas; el nombre de la variable no.',explicacion:'Asignamos un texto y luego lo mostramos.'},
+ {tipo:'opciones',titulo:'Texto o número',pregunta:'¿Qué tipo de dato es 25, escrito sin comillas?',opciones:['Número entero','Texto','Una lista'],correcta:0,pista:'No tiene comillas ni decimales.',explicacion:'25 es un entero, también llamado int.'},
+ {tipo:'codigo',titulo:'Un número guardado',pregunta:'Crea edad con el valor 20 y muestra edad.',inicial:'# Crea y muestra edad\n',salida:'20',pista:'Escribe el número sin comillas.',explicacion:'Una variable puede guardar un número entero.'},
+ {tipo:'opciones',titulo:'Actualizar un valor',pregunta:'Si puntos vale 2 y luego se asigna 5 a puntos, ¿cuál es su nuevo valor?',opciones:['2','5','7'],correcta:1,pista:'La segunda asignación reemplaza el valor anterior.',explicacion:'Después de puntos = 5, la variable vale 5.'},
+ {tipo:'codigo',titulo:'Cambia un valor',pregunta:'Asigna 2 a puntos, después asigna 5 y muestra el valor final.',inicial:'puntos = 2\n# Cambia el valor y muéstralo\n',salida:'5',pista:'Vuelve a usar = para asignar otro valor.',explicacion:'La segunda asignación cambia el valor asociado a puntos.'},
+ {tipo:'opciones',titulo:'Comillas',pregunta:'¿Qué tipo de dato es "25" con comillas?',opciones:['Texto','Número entero','Booleano'],correcta:0,pista:'Las comillas forman una cadena.',explicacion:'Aunque contiene dígitos, "25" es un texto.'},
+ {tipo:'codigo',titulo:'Calcula con variables',pregunta:'Usa las variables precio y cantidad para mostrar el total: 15.',inicial:'precio = 5\ncantidad = 3\n# Muestra precio multiplicado por cantidad\n',salida:'15',pista:'En Python la multiplicación usa *.',explicacion:'Multiplicamos los valores guardados en las dos variables.'},
+ {tipo:'opciones',titulo:'Nombres claros',pregunta:'¿Cuál es un nombre válido y descriptivo para una variable?',opciones:['precio_total','precio total','2precio'],correcta:0,pista:'No puede llevar espacios ni comenzar con un número.',explicacion:'precio_total usa snake_case y describe su contenido.'},
+ {tipo:'codigo',titulo:'Dos datos',pregunta:'Guarda Omar en nombre y 3 en reservas. Muestra cada valor en una línea.',inicial:'# Crea ambas variables y muestra cada una\n',salida:'Omar\n3',pista:'Usa dos asignaciones y dos instrucciones print.',explicacion:'Cada variable guarda un dato y cada print muestra una línea.'}
+];
+
+retosVariables.push(
+ {tipo:'opciones',titulo:'Asignar y comparar',pregunta:'¿Qué símbolo asigna un valor a una variable?',opciones:['=','==','!='],correcta:0,pista:'Es un solo signo igual.',explicacion:'= asigna; == compara igualdad.'},
+ {tipo:'opciones',titulo:'Número con decimal',pregunta:'¿Qué tipo representa normalmente 2.5?',opciones:['float','int','str'],correcta:0,pista:'Tiene una parte decimal.',explicacion:'2.5 es un número de tipo float.'},
+ {tipo:'opciones',titulo:'Mayúsculas',pregunta:'¿Son cantidad y Cantidad la misma variable?',opciones:['No','Sí'],correcta:0,pista:'Python distingue mayúsculas.',explicacion:'Python diferencia los dos nombres.'},
+ {tipo:'opciones',titulo:'Booleanos',pregunta:'¿Qué tipo tienen True y False?',opciones:['bool','str','float'],correcta:0,pista:'Se usan para condiciones verdaderas o falsas.',explicacion:'True y False son valores booleanos.'},
+ {tipo:'opciones',titulo:'Conversión',pregunta:'¿Qué resultado devuelve int("5")?',opciones:['El entero 5','El texto "5"','Siempre un error'],correcta:0,pista:'int intenta convertir texto numérico.',explicacion:'int("5") produce el entero 5.'}
+);
